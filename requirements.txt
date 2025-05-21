@@ -1,0 +1,9 @@
+selenium
+mysql-connector-python
+sqlalchemy
+fastapi
+uvicorn
+streamlit
+pandas
+scikit-learn
+python-dotenv
