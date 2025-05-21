@@ -26,7 +26,7 @@ A full-stack application that detects plagiarism in coding contest submissions u
 ---
 
 ## 📂 Project Structure
-
+```
 project-root/
 │
 ├── backend/
@@ -49,7 +49,7 @@ project-root/
 │
 ├── README.md
 └── requirements.txt 
-
+```
 
 ---
 
@@ -60,28 +60,36 @@ project-root/
 ```sql
 # In MySQL console
 source database/init_db.sql;
+```
+
 2. ⚙️ Backend - FastAPI
+```
 bash
 Copy
 Edit
 cd backend/
 uvicorn api:app --reload
 Runs at: http://127.0.0.1:8000
+```
 
-3. 🎛️ Frontend - Streamlit
+4. 🎛️ Frontend - Streamlit
+```
 bash
 Copy
 Edit
 cd frontend/
 streamlit run app.py
 Opens in browser: http://localhost:8501
+```
 
 🌐 API Endpoints
+```
 Method	Endpoint	Description
 GET	/submissions	Fetch all code entries
 POST	/submission	Submit new code metadata
-
+```
 🧪 Sample Submissions Format
+```
 json
 Copy
 Edit
@@ -92,7 +100,9 @@ Edit
   "srclink": "http://example.com/code.py",
   "timestamp": "2024-05-01T12:00:00"
 }
+```
 🎯 Future Enhancements
+```
 Code syntax normalization before comparison
 
 Integration with GitHub/GitLab for submission pulls
@@ -100,4 +110,4 @@ Integration with GitHub/GitLab for submission pulls
 Admin dashboard for contest insights
 
 Code similarity visualization with AST
-
+```
